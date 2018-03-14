@@ -48,7 +48,9 @@ methods that make it cleaner to add logic to our views.
 
 * You'll want to create a User class and a table to store users. Users should
   have a username, password, and balance (a decimal storing their bank account
-  balance).
+  balance). In the `db` folder is a `seeds.rb` file containing some
+  basic users to practice logging in with. Run `rake db:migrate` and
+  `rake db:seed` once your User migration and model are in place.
 
 * You'll need to create a login form on the index page that accepts a username
   and password and sends a `POST` request with an action of `/login`.
